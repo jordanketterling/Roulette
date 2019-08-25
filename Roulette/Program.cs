@@ -6,15 +6,15 @@ namespace Roulette
     {
         static void Main(string[] args)
         {
-            App app = new App();
+            new App().Run();
         }
     }
 
-    class App
+    public class App
     {
         public void Run()
         {
-            Wheel wheel = new Wheel();
+            new Wheel().BetSelect();
         }
     }
 }
